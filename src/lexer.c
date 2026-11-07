@@ -860,13 +860,13 @@ case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
 #line 45 "src/lexer.l"
-{ /* CRLF = 1 linha */ }
+{ yylineno++; }
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
 #line 46 "src/lexer.l"
-{ /* LF = 1 linha */ }
+{ /* yylineno auto */ }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
